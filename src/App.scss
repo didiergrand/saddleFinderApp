@@ -28,10 +28,117 @@
    width:1170px
   }
  }
-
+ $sf_green:#33CC33;
+ $sf_blue:#00CCCC;
+ $sf_lightgray:#f6f6f6;
+ $sf_white:#fff;
  #saddle_finder {
   padding-top:50px;
-  padding-bottom:50px
+  padding-bottom:50px;
+  background-color:$sf_lightgray;
+  img{
+    max-width: 100%;
+    }
+    label{
+        padding: 1rem;
+    }
+  .st_step a{
+   background-color:$sf_white;
+   display: flex;
+   font-weight: bold;
+  }
+  .st_step{
+    display: flex;
+    flex-direction: column;
+  }
+  .sf_step__buttons a{ease-in-out;
+    flex: 1 1 100%;
+    box-sizing: border-box;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  // Step 1
+  .sf_step1__buttons{
+    display: flex;
+    gap: 1rem;
+  }
+  .sf_step1__buttons a{
+    padding: 4rem;
+    flex: 1 1 100%;
+    box-sizing: border-box;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    &.sf_step1__button_M{
+        color: $sf_green;
+    }
+    &.sf_step1__button_F{
+        color: $sf_blue;
+    }
+  }
+  // Step 2
+  .sf_step2__buttons{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto auto;
+    a{
+        display: flex;
+        justify-content: space-between;
+        color: $sf_green;
+        &:hover{
+            background-color: $sf_green;
+            color: $sf_white;
+        }
+        label{
+            padding: 1rem;
+        }
+    }
+  }
+  // Step 3
+  .sf_step3__buttons{
+    display: flex;
+    gap: 1rem;
+  }
+  .sf_step3__buttons a{
+    padding: 4rem;
+    flex: 1 1 100%;
+    box-sizing: border-box;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $sf_green;
+    &.sf_step1__button_M{
+        color: $sf_green;
+    }
+    &.sf_step1__button_F{
+        color: $sf_blue;
+    }
+  }
+
+
+
+
+
+
+  .sf_step__question{
+    text-align: center;
+    margin: 1rem;
+    max-width: 550px;
+    margin: 0 auto;
+    p{
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+    h2{
+        font-size: 1rem;
+        line-height: 1;
+    }
+  }
  }
 
 

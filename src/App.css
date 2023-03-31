@@ -33,6 +33,165 @@
 #saddle_finder {
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: #f6f6f6;
+}
+#saddle_finder img {
+  max-width: 100%;
+}
+#saddle_finder label {
+  padding: 1rem;
+}
+#saddle_finder .st_step a {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+}
+#saddle_finder .st_step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#saddle_finder .sf_step__buttons a {
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+#saddle_finder .sf_step__buttons a:hover {
+  opacity: 1;
+}
+#saddle_finder .sf_step1__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+#saddle_finder .sf_step1__buttons a {
+  padding: 4rem;
+  opacity: 0.75;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+#saddle_finder .sf_step1__buttons a:hover {
+  opacity: 1;
+}
+#saddle_finder .sf_step1__buttons a.sf_step1__button_M {
+  color: #33CC33;
+}
+#saddle_finder .sf_step1__buttons a.sf_step1__button_F {
+  color: #00CCCC;
+}
+#saddle_finder .sf_step2__buttons {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: auto 1rem auto 1rem auto;
+  grid-template-columns: auto auto auto;
+}
+#saddle_finder .sf_step2__buttons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #33CC33;
+}
+#saddle_finder .sf_step2__buttons a:hover {
+  background-color: #33CC33;
+  color: #fff;
+}
+#saddle_finder .sf_step2__buttons a label {
+  padding: 1rem;
+}
+#saddle_finder .sf_step3__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+#saddle_finder .sf_step3__buttons a {
+  padding: 4rem;
+  opacity: 0.75;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #33CC33;
+}
+#saddle_finder .sf_step3__buttons a:hover {
+  opacity: 1;
+}
+#saddle_finder .sf_step3__buttons a.sf_step1__button_M {
+  color: #33CC33;
+}
+#saddle_finder .sf_step3__buttons a.sf_step1__button_F {
+  color: #00CCCC;
+}
+#saddle_finder .sf_step__question {
+  text-align: center;
+  margin: 1rem;
+  max-width: 550px;
+  margin: 0 auto;
+}
+#saddle_finder .sf_step__question p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+#saddle_finder .sf_step__question h2 {
+  font-size: 1rem;
+  line-height: 1;
 }
 
 /* 
