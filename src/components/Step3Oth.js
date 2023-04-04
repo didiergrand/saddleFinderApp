@@ -5,7 +5,6 @@ import { getTranslation } from "../utils/i18n";
 const Step3Other = ({ onChoice, onReset, goBack, lang, i18n }) => {
     return(
       <div  className="st_step sf_step3">
-      <h1>Step 3 Oth</h1>
       <div className="sf_step__buttons sf_step3__buttons">
         <a href="#Endurance" onClick={() => onChoice("ENDU")}>
           <img src="https://assets.syncros.com/pages/saddles/icon-man-road-endurance.png" alt="Endurance" height="200" />

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { getTranslation } from "../utils/i18n";
 
-const MainProductItem = ({ SaddlesData, productCode, lang }) => {
+const MainProductItem = ({ SaddlesData, productCode, lang, i18n }) => {
 
 
-  let [mainImage, setMainImage] = useState(SaddlesData[productCode].images[0]);
+  let [mainImage, setMainImage] = useState(SaddlesData[productCode].images?.[0]);
 
   const product = SaddlesData[productCode];
   if (!product) {
@@ -33,6 +34,7 @@ const MainProductItem = ({ SaddlesData, productCode, lang }) => {
       <div className="sf_product_mainitem__description">
         <h3>{product.name?.[lang]}</h3>
         <p>{product.description?.[lang]}</p>
+        <a href={product.url}>{getTranslation(i18n, 'nav.detail', lang, 'Product details')}</a>
       </div>
     </div>
   );

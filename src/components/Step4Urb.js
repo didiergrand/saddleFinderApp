@@ -3,7 +3,6 @@ import { getTranslation } from "../utils/i18n";
 
 const Step4Urb = ({ onChoice, onReset, goBack, lang, i18n }) => (
     <div  className="st_step sf_step4">
-        <h1>Step 4 Urb</h1>
         <div className="sf_step__buttons sf_step3__buttons">
         <a href="#Memory" onClick={() => onChoice("MEM")}>
             <img src="https://assets.syncros.com/pages/saddles/2023/saddle-memory-foam.png" alt="Memory Foam" height="150"/>

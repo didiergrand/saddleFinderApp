@@ -2,10 +2,8 @@ import StepsNav from "./StepsNav";
 import { getTranslation } from "../utils/i18n";
 
 const Step2 = ({ onChoice, onReset, lang, i18n, goBack }) => {
-
     return(
     <div className="st_step sf_step2">
-    <h1>Step 2</h1>
     <div className="sf_step__buttons sf_step2__buttons">
       <a href="#Triathlon" onClick={() => onChoice("TRI")}>
         <img src="https://assets.syncros.com/pages/saddles/2023/discipline-triathlon.jpg" alt="Triathlon" width="400" />

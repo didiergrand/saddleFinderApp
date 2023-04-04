@@ -1,4 +1,13 @@
-{
+{ 
+  "title":{
+    "en": "Find your perfect match",
+    "de": "Finde Deine Perfekte Kombination",
+    "fr": "Trouvez votre selle idéale",
+    "it": "Trova la tua sella perfetta",
+    "es": "Encuentra tu sillín perfecto",
+    "pt": "Encontre o seu selim ideal",
+    "cs": "Najděte si sedlo, které vám bude pohodlné"
+  },
   "start": {
     "en": "Start",
     "de": "Start",
@@ -387,7 +396,24 @@
       "es": "Comenzar de nuevo",
       "pt": "Começar de novo",
       "cs": "Začít znovu"
+    },
+    "detail":{
+      "en": "Product details",
+      "de": "Produktdetails",
+      "fr": "Détails du produit",
+      "it": "Dettagli del prodotto",
+      "es": "Detalles del producto",
+      "pt": "Detalhes do produto",
+      "cs": "Podrobnosti o produktu"
+    },
+    "alternative":{
+      "en": "As an alternative",
+      "de": "Als Alternative",
+      "fr": "En tant qu'alternative",
+      "it": "Come alternativa",
+      "es": "Como alternativa",
+      "pt": "Como alternativa",
+      "cs": "Jako alternativa"
     }
   }
-
 }

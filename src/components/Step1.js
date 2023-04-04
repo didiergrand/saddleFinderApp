@@ -4,7 +4,6 @@ import { getTranslation } from "../utils/i18n";
 const Step1 = ({ onChoice, onReset, goBack, lang, i18n }) => {
   return(
   <div className="st_step sf_step1">
-    <h1>Step 1</h1>
     <div className="sf_step__buttons sf_step1__buttons">
         <a href="#Male" className="sf_step1__button_M" onClick={() => onChoice("M")}>
         <img src="https://assets.syncros.com/pages/saddles/icon-man.png" alt="Male" height="200" />

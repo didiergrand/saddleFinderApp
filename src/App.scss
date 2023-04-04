@@ -179,13 +179,26 @@
         color: $sf_green;
       }
     }
+    .sf_result{
+      a{
+        text-decoration: none;
+        color: $sf_green;
+        background: none;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
     .sf_result__list{
       display: grid;
-      grid-template-columns: 4fr 1fr;
+      @media screen and (min-width: 1200px) {
+        grid-template-columns: 4fr 1fr;
+      }
     }
     .sf_product_mainitem{
       display: grid;
+      @media screen and (min-width: 1024px) {
       grid-template-columns: 3fr 1fr 3fr;
+      }
       .sf_product_mainitem__img img{
         min-width: 400px;
         padding: 1rem;

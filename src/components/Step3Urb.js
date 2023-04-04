@@ -9,7 +9,6 @@ const Step3Urb = ({ onChoice, gender, onReset, goBack, i18n, lang }) => {
   }
   return(
     <div  className="st_step sf_step3">
-    <h1>Step 3 Urb</h1>
     <div className="sf_step__buttons sf_step3__buttons">
       <a href="#Regular" className={slctdGender} onClick={() => onChoice("REG")}>
         <img src={`https://assets.syncros.com/pages/saddles/2023/urban-regular-${slctdGender}.png`} alt="Regular" height="200" />

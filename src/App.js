@@ -10,6 +10,8 @@ import Step3Urb from "./components/Step3Urb";
 import Step3Oth from "./components/Step3Oth";
 import Step4Urb from "./components/Step4Urb";
 import Step4Oth from "./components/Step4Oth";
+import { getTranslation } from "./utils/i18n";
+
 
 const App = () => {
   const [step, setStep] = useState(1);
@@ -60,9 +62,9 @@ const App = () => {
   const i18n = SaddlesI18n;
 
   return (
-
+<>
+    <h2>{ getTranslation(i18n, 'title', lang, 'Find your perfect match')} </h2>
     <div className="st_step sf_start">
-      codeArray : {codeArray}<br />
       {step === 1 && (<Step1 onChoice={handleChoice} lang={lang} i18n={i18n} />)}
       {step === 2 && (<Step2 onChoice={handleChoice} lang={lang} i18n={i18n} onReset={handleReset} goBack={handleBackButton} code={code} latestChoice={latestChoice} />)}
       {step === 3 && 
@@ -74,7 +76,7 @@ const App = () => {
         <Results products={products} lang={lang} i18n={i18n} code={code} onReset={handleReset} goBack={handleBackButton} codeArray={codeArray} />
       )}
     </div>
-
+    </>
   );
 };
 
