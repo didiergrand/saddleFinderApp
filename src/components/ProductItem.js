@@ -5,10 +5,9 @@ const ProductItem = ({ SaddlesData, productCode, lang }) => {
   }
 
   return (
-    <div>
+    <div className="sf_product_item">
+      <img src={product.images?.[0]} alt={product.name?.[lang]} height="200" />
       <h3>{product.name?.[lang]}</h3>
-      <p>{product.description?.[lang]}</p>
-      <img src={product.images?.[0]} alt={product.name?.[lang]} height="100" />
     </div>
   );
 };

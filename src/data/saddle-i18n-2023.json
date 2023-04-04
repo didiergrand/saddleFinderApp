@@ -1,0 +1,393 @@
+{
+  "start": {
+    "en": "Start",
+    "de": "Start",
+    "fr": "Commencer",
+    "it": "Inizio",
+    "es": "Empezar",
+    "pt": "Começar",
+    "cs": "Start"
+  },
+  "description": {
+    "en": "<p>Syncros saddles are designed to give the optimal body fit for an off the shelf saddle. <br/>Use this simple tool to select the correct saddle for your flexibility and riding style.</p>",
+    "de": "<p>Syncros-Sättel wurden entwickelt, um selbst bei einen handelsüblichen Sattel eine optimale Passform zu gewährleisten. <br/>Mit diesem einfachen Tool findest du den richtigen Sattel in gewünschter Flexibilität und passend zu deinem Fahrstil.</p>",
+    "fr": "<p>Les selles Syncros sont conçues pour vous offrir une ergonomie optimale sans passer par du sur-mesure. <br/>Utilisez cet outil simple pour choisir la selle adaptée à votre souplesse et à votre style de pilotage.</p>",
+    "it": "<p>Le selle Syncros sono progettate per dare un'ottima aderenza al corpo ad una sella di serie. <br/>Usa questo semplice strumento per selezionare la sella corretta per la tua flessibilità e il tuo stile di guida.</p>",
+    "es": "<p>Los sillines Syncros están diseñados con un ajuste anatómico óptimo sin necesidad de adaptación. <br/>Utiliza esta sencilla herramienta para elegir el sillín correcto en función de tu flexibilidad y tu estilo de montar.</p>",
+    "pt": "<p>Os Selins Syncros são desenvolvidos com tecnologias que lhe proporcionam um ajuste ideal. <br/>Utilize esta simples ferramenta para encontrar o selim mais apropriado à sua flexibilidade e posição de condução.</p>",
+    "cs": "<p>Sedla Syncros jsou konstruována tak, aby i jako běžně dostupná optimálně vyhovovala. <br/>Použijte tento jednoduchý nástroj a zvolte si správné sedlo, které vám bude pohodlné a bude odpovídat vašemu stylu jízdy.</p>"
+  },
+  "gender": {
+    "male": {
+      "en": "Male",
+      "de": "Mann",
+      "fr": "Homme",
+      "it": "Uomo",
+      "es": "Hombre",
+      "pt": "Masculino",
+      "cs": "Muž"
+    },
+    "female": {
+      "en": "Female",
+      "de": "Frau",
+      "fr": "Femme",
+      "it": "Donna",
+      "es": "Mujer",
+      "pt": "Feminino",
+      "cs": "Žena"
+    },
+    "question": {
+      "title":{
+        "en": "Who are you?",
+        "de": "Wer bist du?",
+        "fr": "De quel sexe êtes-vous ?",
+        "it": "Chi sei?",
+        "es": "¿Qué eres?",
+        "pt": "Qual o seu género?",
+        "cs": "Kdo jste?"
+      },
+      "paragraph":{
+        "en": "Please choose male or female.",
+        "de": "Bitte wähle aus: Mann oder Frau.",
+        "fr": "Veuillez choisir homme ou femme.",
+        "it": "Selezionare uomo o donna.",
+        "es": "Elige hombre o mujer.",
+        "pt": "Escolha Masculino ou Feminino.",
+        "cs": "Vyberte laskavě, zda jste muž nebo žena."
+      }
+    }
+  },
+  "discipline": {
+    "triathlon": {
+      "en": "Triathlon",
+      "de": "Triathlon",
+      "fr": "Triathlon",
+      "it": "Triathlon",
+      "es": "Triatlón",
+      "pt": "Triatlo",
+      "cs": "Triatlon"
+    },
+    "road": {
+      "en": "Road",
+      "de": "Road",
+      "fr": "Route",
+      "it": "Strada",
+      "es": "Carretera",
+      "pt": "Estrada",
+      "cs": "Silnice"
+    },
+    "gravel": {
+      "en": "Gravel",
+      "de": "Gravel",
+      "fr": "Route en gravier",
+      "it": "Gravel",
+      "es": "Gravel",
+      "pt": "Gravel",
+      "cs": "Silnice / gravel"
+    },
+    "xc": {
+      "en": "Cross country",
+      "de": "Cross country",
+      "fr": "Cross-country",
+      "it": "Cross country",
+      "es": "Cross country",
+      "pt": "Cross-country",
+      "cs": "Cross-country"
+    },
+    "trail": {
+      "en": "Trail",
+      "de": "Trail",
+      "fr": "Piste",
+      "it": "Trail",
+      "es": "Trail",
+      "pt": "Trail",
+      "cs": "Trail"
+    },
+    "enduro": {
+      "en": "Enduro",
+      "de": "Enduro",
+      "fr": "Enduro",
+      "it": "Enduro",
+      "es": "Enduro",
+      "pt": "Enduro",
+      "cs": "Enduro"
+    },
+    "dh": {
+      "en": "DH/Jump",
+      "de": "DH/Jump",
+      "fr": "DH/Jump",
+      "it": "DH/Jumping",
+      "es": "Descenso/Saltos",
+      "pt": "DH/Jump",
+      "cs": "DH/Jump"
+    },
+    "tt": {
+      "en": "TT",
+      "de": "TT",
+      "fr": "TT",
+      "it": "Cronometro",
+      "es": "Contrarreloj",
+      "pt": "Contra-Relógio",
+      "cs": "TT"
+    },
+    "urban": {
+      "en": "Urban",
+      "de": "Urban",
+      "fr": "Urbain",
+      "it": "Urban",
+      "es": "Urban",
+      "pt": "Urban",
+      "cs": "Urban"
+    },
+    "question": {
+      "title":{
+        "en": "What do you ride?",
+        "de": "Was fährst du?",
+        "fr": "Quelle est votre pratique ?",
+        "it": "Che bici hai?",
+        "es": "¿Qué bici montas?",
+        "pt": "Qual a sua prática?",
+        "cs": "Co je vaše kolo?"
+      },
+      "paragraph":{
+        "en": "Each discipline has a different position and riding style. Select below to match your riding.  Position will come next.",
+        "de": "Jede Disziplin hat eine andere Fahrposition und einen anderen Fahrstil. Triff die Wahl passend zu deinem Fahrstil. Danach widmen wir uns der Position.",
+        "fr": "Chaque discipline a une position et un style de pilotage différents. Choisissez le style de pilotage qui vous correspond ci-dessous. La position viendra ensuite.",
+        "it": "Ogni disciplina ha una posizione e uno stile di guida differente. Seleziona qui sotto il tuo tipo di bici. La posizione è la prossima.",
+        "es": "Cada disciplina tiene una posición y un estilo de conducción diferentes. Seleccione a continuación para coincidir con su conducción. La posición vendrá a continuación.",
+        "pt": "Cada disciplina tem uma posição e um estilo de condução diferentes. Selecione abaixo para corresponder à sua prática. A posição virá a seguir.",
+        "cs": "Každá disciplína má jinou pozici a jiný styl jízdy. Vyberte níže, aby odpovídala vaší jízdě. Pozice bude následovat."
+      }
+    }
+  },
+  "distance":{
+    "long": {
+      "en": "Long distance",
+      "de": "Langstrecke",
+      "fr": "Longue distance",
+      "it": "Lunga distanza",
+      "es": "Larga distancia",
+      "pt": "Longas distâncias",
+      "cs": "Dlouhé vzdálenosti"
+    },
+    "short": {
+      "en": "Short distance",
+      "de": "Kurzstrecke",
+      "fr": "Courte distance",
+      "it": "Distanza corta",
+      "es": "Corta distancia",
+      "pt": "Curtas Distâncias",
+      "cs": "Krátké vzdálenosti"
+    },
+    "question": {
+      "title": {
+        "en": "What distance do you ride?",
+        "de": "Welche Distanz fährst du?",
+        "fr": "Quelle distance pratiquez-vous ?",
+        "it": "Quale distanza fai?",
+        "es": "¿Qué distancia montas?",
+        "pt": "Qual a sua distância?",
+        "cs": "Jakou vzdálenost jízdíte?"
+      },
+      "paragraph":{
+        "en": "Performance orientated riders tend to be more flexibile in the pelvic and lumbar spine and achieve a lower position while endurance riders with lower flexibility sit more upright.",
+        "de": "Leistungsorientierte Fahrer sind am Becken und der Lendenwirbelsäule flexibler und erreichen eine niedrigere Position, während Ausdauerfahrer mit geringerer Flexibilität aufrechter sitzen.",
+        "fr": "Les cyclistes axés sur la performance ont tendance à être plus souples dans les régions lombaire et pelvienne, et à se placer en position penchée, tandis que les cyclistes axés sur l’endurance, moins souples, se tiennent droits.",
+        "it": "I ciclisti orientati alle prestazioni tendono ad essere più flessibili sull’osso pelvico e sull’area lombare, raggiungendo una posizione ribassata mentre i ciclisti di endurance che necessitano di meno flessibilità siedono più eretti.",
+        "es": "Los ciclistas más rápidos suelen ser más flexibles en la zona pélvica y lumbar para rodar en una postura más baja, mientras que los de resistencia son menos flexibles y se sientan en una postura más erguida.",
+        "pt": "Ciclistas orientados para performance tendem a ser mais flexíveis na pélvis e lombar e alcançam uma posição mais baixa, enquanto os ciclistas de Endurance com menor flexibilidade ficam em posições mais verticais.",
+        "cs": "Výkonnostní jezdci bývají ohebnější v oblasti pánve a beder a zaujímají níže položenou pozici, zatímco vytrvalostní jezdci sedí vzpřímeněji."
+      }
+    }
+  },
+  "saddletype": {
+    "endurance": {
+      "en": "Endurance",
+      "de": "Ausdauer",
+      "fr": "Endurance",
+      "it": "Endurance",
+      "es": "Resistencia",
+      "pt": "Endurance",
+      "cs": "Vytrvalost"
+    },
+    "performance": {
+      "en": "Performance",
+      "de": "Leistung",
+      "fr": "Performance",
+      "it": "Performance",
+      "es": "Velocidad",
+      "pt": "Performance",
+      "cs": "Výkonnostní"
+    },
+    "question": {
+      "title":{
+        "en":"How do you sit on the bike",
+        "de":"Wie sitzt du auf dem Bike?",
+        "fr":"Comment vous asseyez-vous sur le vélo ?",
+        "it":"Come ti siedi sulla bici?",
+        "es":"¿Cómo te sientas en la bici?",
+        "pt":"Como você se senta na bicicleta?",
+        "cs":"Jak sedíte na kole?"
+      },
+      "paragraph":{
+        "en": "Performance orientated riders tend to be more flexibile in the pelvic and lumbar spine and achieve a lower position while endurance riders with lower flexibility sit more upright.",
+        "de": "Leistungsorientierte Fahrer sind am Becken und der Lendenwirbelsäule flexibler und erreichen eine niedrigere Position, während Ausdauerfahrer mit geringerer Flexibilität aufrechter sitzen.",
+        "fr": "Les cyclistes axés sur la performance ont tendance à être plus souples dans les régions lombaire et pelvienne, et à se placer en position penchée, tandis que les cyclistes axés sur l’endurance, moins souples, se tiennent droits.",
+        "it": "I ciclisti orientati alle prestazioni tendono ad essere più flessibili sull’osso pelvico e sull’area lombare, raggiungendo una posizione ribassata mentre i ciclisti di endurance che necessitano di meno flessibilità siedono più eretti.",
+        "es": "Los ciclistas más rápidos suelen ser más flexibles en la zona pélvica y lumbar para rodar en una postura más baja, mientras que los de resistencia son menos flexibles y se sientan en una postura más erguida.",
+        "pt": "Ciclistas orientados para performance tendem a ser mais flexíveis na pélvis e lombar e alcançam uma posição mais baixa, enquanto os ciclistas de Endurance com menor flexibilidade ficam em posições mais verticais.",
+        "cs": "Výkonnostní jezdci bývají ohebnější v oblasti pánve a beder a zaujímají níže položenou pozici, zatímco vytrvalostní jezdci sedí vzpřímeněji."
+      }
+    }
+  },
+  "comfort": {
+    "cutout": {
+      "en": "Cut out",
+      "de": "Mit Aussparung",
+      "fr": "Ajourée",
+      "it": "Con foro",
+      "es": "Hendidura",
+      "pt": "Selim com Corte Anatómico",
+      "cs": "S výřezem"
+    },
+    "channel": {
+      "en": "Channel",
+      "de": "Vertiefung",
+      "fr": "Canal",
+      "it": "Con canale",
+      "es": "Canal",
+      "pt": "Selim com Canal",
+      "cs": "Se středovým prolisem"
+    },
+    "question": {
+      "title":{
+        "en": "Do you feel pressure ?",
+        "de": "Spürst du den Druck?",
+        "fr": "Ressentez-vous une pression ?",
+        "it": "Percepisci pressione?",
+        "es": "¿Sientes presión?",
+        "pt": "Você sente pressão?",
+        "cs": "Cítíte tlak?"
+      },
+      "paragraph":{
+        "en": "If you feel bony pain on the saddle then you need a cutout, otherwise a channel will help to spread the load.",
+        "de": "Falls du auf dem Sattel Knochenschmerzen verspürst, benötigst du eine Aussparung. Ansonsten hilft auch ein Kanal bei der Gewichtsverteilung.",
+        "fr": "Si vous ressentez des douleurs osseuses sur le siège, vous avez besoin d’une découpe, sinon un canal aidera à répartir la charge.",
+        "it": "Se senti dolore osseo sul sellino, hai bisogno di una foratura, altrimenti un canale aiuterà a distribuire il carico.",
+        "es": "Si sientes dolor óseo en el sillín, necesitas una hendidura, de lo contrario un canal ayudará a distribuir la carga.",
+        "pt": "Se você sentir dor óssea no selim, você precisa de um corte, caso contrário, um canal ajudará a distribuir a carga.",
+        "cs": "Pokud cítíte bolest kostí na sedle, potřebujete výřez, jinak kanál pomůže rozložit zátěž."
+      }
+    }
+  },
+  "urbanposture": {
+    "regular": {
+      "en": "Regular Posture",
+      "de": "Regular Posture (de)",
+      "fr": "Regular Posture (fr)",
+      "it": "Regular Posture (it)",
+      "es": "Regular Posture (es)",
+      "pt": "Regular Posture (pt)",
+      "cs": "Regular Posture (cs)"
+    },
+    "straight": {
+      "en": "Straight Posture",
+      "de": "Straight Posture (de)",
+      "fr": "Straight Posture (fr)",
+      "it": "Straight Posture (it)",
+      "es": "Straight Posture (es)",
+      "pt": "Straight Posture (pt)",
+      "cs": "Straight Posture (cs)"
+    },
+    "question": {
+      "title":{
+        "en": "Missing title",
+        "de": "Missing title (de)",
+        "fr": "Missing title (fr)",
+        "it": "Missing title (it)",
+        "es": "Missing title (es)",
+        "pt": "Missing title (pt)",
+        "cs": "Missing title (cs)"
+      },
+      "paragraph":{
+        "en": "Missing text",
+        "de": "Missing text (de)",
+        "fr": "Missing text (fr)",
+        "it": "Missing text (it)",
+        "es": "Missing text (es)",
+        "pt": "Missing text (pt)",
+        "cs": "Missing text (cs)"
+      }
+    }
+  },
+  "fabric": {
+    "memory": {
+      "en": "Mermory Foam",
+      "de": "Mermory Foam (de)",
+      "fr": "Mermory Foam (fr)",
+      "it": "Mermory Foam (it)",
+      "es": "Mermory Foam (es)",
+      "pt": "Mermory Foam (pt)",
+      "cs": "Mermory Foam (cs)"
+    },
+    "gel": {
+      "en": "Gel",
+      "de": "Gel (de)",
+      "fr": "Gel (fr)",
+      "it": "Gel (it)",
+      "es": "Gel (es)",
+      "pt": "Gel (pt)",
+      "cs": "Gel (cs)"
+    },
+    "foam": {
+      "en": "Foam",
+      "de": "Foam (de)",
+      "fr": "Foam (fr)",
+      "it": "Foam (it)",
+      "es": "Foam (es)",
+      "pt": "Foam (pt)",
+      "cs": "Foam (cs)"
+    },
+    "question": {
+      "title":{
+        "en": "Missing title",
+        "de": "Missing title (de)",
+        "fr": "Missing title (fr)",
+        "it": "Missing title (it)",
+        "es": "Missing title (es)",
+        "pt": "Missing title (pt)",
+        "cs": "Missing title (cs)"
+      },
+      "paragraph":{
+        "en": "Missing text",
+        "de": "Missing text (de)",
+        "fr": "Missing text (fr)",
+        "it": "Missing text (it)",
+        "es": "Missing text (es)",
+        "pt": "Missing text (pt)",
+        "cs": "Missing text (cs)"
+      }
+    }
+  },
+  "nav": {
+    "back": {
+      "en": "Go back",
+      "de": "Zurück",
+      "fr": "Retour",
+      "it": "Indietro",
+      "es": "Volver",
+      "pt": "Voltar",
+      "cs": "Zpět"
+    },
+    "reset": {
+      "en": "Start Again",
+      "de": "Neu starten",
+      "fr": "Recommencer",
+      "it": "Ricomincia",
+      "es": "Comenzar de nuevo",
+      "pt": "Começar de novo",
+      "cs": "Začít znovu"
+    }
+  }
+
+}

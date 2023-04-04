@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Results from "./components/Results";
 import SaddlesTree from "./data/saddle-tree-2023.json";
+import SaddlesI18n from "./data/saddle-i18n-2023.json";
 import './App.css';
 import Step1 from "./components/Step1";
 import Step2 from "./components/Step2";
@@ -13,37 +14,64 @@ import Step4Oth from "./components/Step4Oth";
 const App = () => {
   const [step, setStep] = useState(1);
   const [code, setCode] = useState("");
+  const [latestChoice, setLatestChoice] = useState("");
+  const [codeArray, setCodeArray] = useState([]);
+  const [gender, setGender] = useState("");
+
+  // get url
+  const url = window.location.href;
+  // get lang from url
+  const urlLang = url.split("/")[4];
+  console.log(urlLang);
+  let lang = "en";
+  // set lang
+  if(urlLang === "de" || urlLang === "fr" || urlLang === "it" || urlLang === "en" || urlLang === "es" || urlLang === "cs") {
+    lang = urlLang;
+  }
 
   const handleChoice = (choice) => {
+    if(step === 1){
+      setGender(choice);
+    }
+    setLatestChoice(choice);
     setCode(code + choice);
     setStep(step + 1);
+    // add the choice to the array
+    setCodeArray(codeArray.concat(choice));
+    console.log("gender:"+gender);
   };
 
   const handleReset = () => {
-    console.log(
-      "Resetting the app. This will reset the step to 1 and the code to an empty string."
-    );
     setStep(1);
     setCode("");
+    setCodeArray([]); // reset the codeArray
   };
   const handleBackButton = () => {
     if (step > 1) {
       setStep(step - 1);
       window.history.pushState(null, "", `#${step - 1}`);
+      // remove the last choice from the array
+      setCodeArray(prevCodeArray => prevCodeArray.slice(0, -1));
+      console.log(codeArray);
     }
   };
 
   const products = SaddlesTree;
+  const i18n = SaddlesI18n;
 
   return (
 
     <div className="st_step sf_start">
-      {step === 1 && (<Step1 onChoice={handleChoice} />)}
-      {step === 2 && (<Step2 onChoice={handleChoice} onReset={handleReset} goBack={handleBackButton} code={code} />)}
-      {step === 3 && !code.includes("TT") && !code.includes("DH") && <Step3 onChoice={handleChoice} code={code} products={products} onReset={handleReset} goBack={handleBackButton}  />}
-      {step === 4 && !code.includes("TT") && !code.includes("DH") && !code.includes("TRI") && (<Step4 onChoice={handleChoice} code={code} products={products} onReset={handleReset} goBack={handleBackButton} />)}
+      codeArray : {codeArray}<br />
+      {step === 1 && (<Step1 onChoice={handleChoice} lang={lang} i18n={i18n} />)}
+      {step === 2 && (<Step2 onChoice={handleChoice} lang={lang} i18n={i18n} onReset={handleReset} goBack={handleBackButton} code={code} latestChoice={latestChoice} />)}
+      {step === 3 && 
+        !code.includes("TT") && !code.includes("DH") && 
+        <Step3 onChoice={handleChoice} lang={lang} i18n={i18n} gender={gender} code={code} products={products} onReset={handleReset} goBack={handleBackButton} codeArray={codeArray} />}
+      {step === 4 && !code.includes("TT") && !code.includes("DH") && !code.includes("TRI") && (
+        <Step4 onChoice={handleChoice} lang={lang} i18n={i18n} code={code} products={products} onReset={handleReset} goBack={handleBackButton} codeArray={codeArray} />)}
       {(step === 5 || (step === 3 && code.includes("TT")) || (step === 3 && code.includes("DH")) || (step === 4 && code.includes("TRI"))) && (
-        <Results products={products} code={code} onReset={handleReset} goBack={handleBackButton} />
+        <Results products={products} lang={lang} i18n={i18n} code={code} onReset={handleReset} goBack={handleBackButton} codeArray={codeArray} />
       )}
     </div>
 
@@ -51,17 +79,19 @@ const App = () => {
 };
 
 
-const Step3 = ({ onChoice, code, products, onReset, goBack}) => {
+const Step3 = ({ onChoice, code, gender, products, onReset, goBack, codeArray, lang, i18n}) => {
   const isUrban = code.includes("URB");
   const isTriathlon = code.includes("TRI");
   const isTT = code.includes("TT");
   const isDH = code.includes("DH");
-
+  console.log(code);
   if (isTriathlon) {
     return (<Step3Tri
     onChoice={onChoice} 
     onReset={onReset}
     goBack={goBack}
+    lang={lang}
+    i18n={i18n}
     />);
   } else if (isTT) {
     return ( 
@@ -69,6 +99,9 @@ const Step3 = ({ onChoice, code, products, onReset, goBack}) => {
         products={products}
         onReset={onReset}
         goBack={goBack}
+        codeArray={codeArray}
+        lang={lang}
+        i18n={i18n}
       />
     );
   } else if (isDH) {
@@ -77,14 +110,21 @@ const Step3 = ({ onChoice, code, products, onReset, goBack}) => {
         products={products}
         onReset={onReset}
         goBack={goBack}
+        codeArray={codeArray}
+        lang={lang}
+        i18n={i18n}
       />
     );
   } else if (isUrban) {
+    console.log(gender);
     return (
       <Step3Urb
+      gender={gender}
       onChoice={onChoice}
       onReset={onReset}
       goBack={goBack} 
+      lang={lang}
+      i18n={i18n}
     />
     );
   } else {
@@ -92,11 +132,13 @@ const Step3 = ({ onChoice, code, products, onReset, goBack}) => {
       onChoice={onChoice}
       onReset={onReset}
       goBack={goBack}
+      lang={lang}
+      i18n={i18n}
     />);
   }
 };
 
-const Step4 = ({ onChoice, code, products, onReset, goBack }) => {
+const Step4 = ({ onChoice, code, products, onReset, goBack, lang, i18n }) => {
   const isUrban = code.includes("URB");
   const isTriathlon = code.includes("TRI");
 
@@ -105,12 +147,16 @@ const Step4 = ({ onChoice, code, products, onReset, goBack }) => {
     onChoice={onChoice}
     onReset={onReset}
     goBack={goBack} 
+    lang={lang}
+    i18n={i18n}
    />;
   } else if (isTriathlon) {
     return (
       <Results
         products={products}
         onReset={onReset}
+        lang={lang}
+        i18n={i18n}
       />
     );
   } else {
@@ -119,6 +165,8 @@ const Step4 = ({ onChoice, code, products, onReset, goBack }) => {
       onChoice={onChoice} 
       onReset={onReset} 
       goBack={goBack}
+      lang={lang}
+      i18n={i18n}
     />
     );
   }
