@@ -2,6 +2,7 @@ import StepsNav from "./StepsNav";
 import { getTranslation } from "../utils/i18n";
 
 const Step4Oth = ({ onChoice, onReset, goBack, lang, i18n }) => {
+
     return (
     <div  className="st_step sf_step4">
     <div className="sf_step__buttons sf_step3__buttons">

@@ -2,18 +2,37 @@ import StepsNav from "./StepsNav";
 import { getTranslation } from "../utils/i18n";
 
 
-const Step3Other = ({ onChoice, onReset, goBack, lang, i18n }) => {
+const Step3Other = ({ onChoice, onReset, goBack, lang, i18n, codeArray }) => {
+    // get array of saddles from the API
+    const isXC = codeArray.includes("XC");
+    const isTRA = codeArray.includes("TRA");
+    const isEN = codeArray.includes("EN");
+    const isF = codeArray.includes("F");
+    let gender = "man";
+    if(isF) {
+      gender="woman";
+    } 
     return(
       <div  className="st_step sf_step3">
       <div className="sf_step__buttons sf_step3__buttons">
         <a href="#Endurance" onClick={() => onChoice("ENDU")}>
-          <img src="https://assets.syncros.com/pages/saddles/icon-man-road-endurance.png" alt="Endurance" height="200" />
+          
+      
+          {(isXC || isTRA || isEN) ? (
+            <img src={`https://assets.syncros.com/pages/saddles/icon-${gender}-mtb-endurance.png`} alt="Endurance" height="200" />
+            ) : (
+            <img src={`https://assets.syncros.com/pages/saddles/icon-${gender}-road-endurance.png`} alt="Endurance" height="200" />
+          )}
           <label>
             { getTranslation(i18n, 'saddletype.endurance', lang, 'Endurance') }
           </label>
         </a>
         <a href="#Performance" onClick={() => onChoice("PERF")}>
-          <img src="https://assets.syncros.com/pages/saddles/icon-man-road-performance.png" alt="Performance" height="200" />
+          {(isXC || isTRA || isEN) ? (
+            <img src={`https://assets.syncros.com/pages/saddles/icon-${gender}-mtb-performance.png`} alt="Performance" height="200" />          
+            ) : (
+            <img src={`https://assets.syncros.com/pages/saddles/icon-${gender}-road-performance.png`} alt="Performance" height="200" /> 
+          )}
           <label>
             { getTranslation(i18n, 'saddletype.performance', lang, 'Performance') }
           </label>

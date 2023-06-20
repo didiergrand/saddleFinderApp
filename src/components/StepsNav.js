@@ -6,7 +6,7 @@ const StepsNav = ({ goBack, onReset, lang, i18n }) => {
         <button onClick={goBack}><i className="far fa-chevron-left"></i>
           { getTranslation(i18n, 'nav.back', lang, 'Back') }
         </button>
-        <button onClick={onReset}><i className="far fa-Undo-alt"></i>
+        <button onClick={onReset}><i className="far fa-undo-alt"></i>
           { getTranslation(i18n, 'nav.reset', lang, 'Reset') }
         </button>
     </div>

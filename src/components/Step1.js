@@ -26,7 +26,6 @@ const Step1 = ({ onChoice, onReset, goBack, lang, i18n }) => {
       { getTranslation(i18n, 'gender.question.paragraph', lang, 'Who are you?')}
       </p>
     </div>
-    <StepsNav onReset={onReset} goBack={goBack} i18n={i18n} lang={lang} />
   </div>
 )};
 export default Step1;

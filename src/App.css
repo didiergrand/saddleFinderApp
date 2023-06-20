@@ -1,39 +1,23 @@
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container:before,
-.container:after {
-  content: " ";
-  display: table;
-}
-
-.container:after {
-  clear: both;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
 #saddle_finder {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #f6f6f6;
+}
+#saddle_finder .sf_cover__img {
+  position: relative;
+  display: inline-block;
+}
+#saddle_finder .sf_cover__img button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #fff;
+}
+#saddle_finder h2 {
+  text-align: center;
 }
 #saddle_finder img {
   max-width: 100%;
@@ -59,6 +43,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 3rem;
 }
 #saddle_finder .sf_step__buttons a {
   -webkit-box-flex: 1;
@@ -215,16 +200,19 @@
   text-align: center;
   margin: 1rem;
   max-width: 550px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
 }
 #saddle_finder .sf_step__question p {
-  font-size: 1rem;
-  line-height: 1.5;
   margin: 0;
 }
 #saddle_finder .sf_step__question h2 {
-  font-size: 1rem;
-  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  font-size: 1.5rem;
+  letter-spacing: normal;
+  margin: 1rem;
+  margin-top: 3rem;
 }
 #saddle_finder .sf_step__nav {
   display: -webkit-box;
@@ -243,6 +231,9 @@
   cursor: pointer;
   color: #33CC33;
 }
+#saddle_finder .sf_step__nav button i {
+  padding-right: 1rem;
+}
 #saddle_finder .sf_result a {
   text-decoration: none;
   color: #33CC33;
@@ -253,6 +244,7 @@
 #saddle_finder .sf_result__list {
   display: -ms-grid;
   display: grid;
+  margin-bottom: 3rem;
 }
 @media screen and (min-width: 1200px) {
   #saddle_finder .sf_result__list {

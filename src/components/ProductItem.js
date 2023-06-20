@@ -9,8 +9,8 @@ const ProductItem = ({ SaddlesData, productCode, lang, i18n }) => {
   return (
     <div className="sf_product_item">
       <img src={product.images?.[0]} alt={product.name?.[lang]} height="200" />
-      <h3>{product.name?.[lang]}</h3>
-      <a href={product.url}>{getTranslation(i18n, 'nav.detail', lang, 'Product details')}</a>
+      <h3>{product.name?.[lang]}</h3>{product.url}
+      <a href={`https://www.syncros.com/product/${product.url}`}>{getTranslation(i18n, 'nav.detail', lang, 'Product details')}</a>
     </div>
   );
 };

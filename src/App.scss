@@ -1,33 +1,33 @@
 
-.container {
-  margin-right:auto;
-  margin-left:auto;
-  padding-left:15px;
-  padding-right:15px
- }
- .container:before,
- .container:after {
-  content:" ";
-  display:table
- }
- .container:after {
-  clear:both
- }
- @media(min-width:768px) {
-  .container {
-   width:750px
-  }
- }
- @media(min-width:992px) {
-  .container {
-   width:970px
-  }
- }
- @media(min-width:1200px) {
-  .container {
-   width:1170px
-  }
- }
+// .container {
+//   margin-right:auto;
+//   margin-left:auto;
+//   padding-left:15px;
+//   padding-right:15px
+//  }
+//  .container:before,
+//  .container:after {
+//   content:" ";
+//   display:table
+//  }
+//  .container:after {
+//   clear:both
+//  }
+//  @media(min-width:768px) {
+//   .container {
+//    width:750px
+//   }
+//  }
+//  @media(min-width:992px) {
+//   .container {
+//    width:970px
+//   }
+//  }
+//  @media(min-width:1200px) {
+//   .container {
+//    width:1170px
+//   }
+//  }
 
 
 
@@ -36,6 +36,21 @@
  $sf_lightgray:#f6f6f6;
  $sf_white:#fff;
  #saddle_finder {
+  .sf_cover__img {
+    position: relative;
+    display: inline-block;
+  }
+  .sf_cover__img button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #fff;
+  }
+  h2{
+    text-align: center;
+  }
   padding-top:50px;
   padding-bottom:50px;
   background-color:$sf_lightgray;
@@ -55,6 +70,7 @@
   .st_step{
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
   }
   .sf_step__buttons a{
     flex: 1 1 100%;
@@ -156,16 +172,19 @@
     text-align: center;
     margin: 1rem;
     max-width: 550px;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
     p{
-        font-size: 1rem;
-        line-height: 1.5;
         margin: 0;
     }
     h2{
-        font-size: 1rem;
-        line-height: 1;
-    }
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      text-transform: none;
+      font-size: 1.5rem;
+      letter-spacing: normal;
+      margin: 1rem;
+      margin-top: 3rem;
+    } 
   }
   .sf_step__nav{
       display: flex;
@@ -176,7 +195,10 @@
         border: 0;
         background-color: transparent;
         cursor: pointer;
-        color: $sf_green;
+        color: $sf_green; 
+        i {
+          padding-right: 1rem;
+        }
       }
     }
     .sf_result{
@@ -190,6 +212,7 @@
     }
     .sf_result__list{
       display: grid;
+      margin-bottom: 3rem;
       @media screen and (min-width: 1200px) {
         grid-template-columns: 4fr 1fr;
       }

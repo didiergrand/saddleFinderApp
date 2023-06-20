@@ -3,7 +3,6 @@ import { getTranslation } from "../utils/i18n";
 
 const Step3Urb = ({ onChoice, gender, onReset, goBack, i18n, lang }) => {
   let slctdGender = "man";
-  console.log(gender);
   if(gender === "F") {
     slctdGender = "woman";
   }
