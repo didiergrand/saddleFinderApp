@@ -1,4 +1,3 @@
-import StepsNav from "./StepsNav";
 import { getTranslation } from "../utils/i18n";
 
 const Step1 = ({ onChoice, onReset, goBack, lang, i18n }) => {

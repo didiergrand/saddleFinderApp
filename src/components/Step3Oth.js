@@ -15,9 +15,7 @@ const Step3Other = ({ onChoice, onReset, goBack, lang, i18n, codeArray }) => {
     return(
       <div  className="st_step sf_step3">
       <div className="sf_step__buttons sf_step3__buttons">
-        <a href="#Endurance" onClick={() => onChoice("ENDU")}>
-          
-      
+        <a href="#Endurance" onClick={() => onChoice("ENDU")}>      
           {(isXC || isTRA || isEN) ? (
             <img src={`https://assets.syncros.com/pages/saddles/icon-${gender}-mtb-endurance.png`} alt="Endurance" height="200" />
             ) : (

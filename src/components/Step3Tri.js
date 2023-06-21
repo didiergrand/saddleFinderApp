@@ -6,13 +6,13 @@ const Step3Tri = ({ onChoice, onReset, goBack, lang, i18n }) => {
     <div className="st_step sf_step3">
     <div className="sf_step__buttons sf_step3__buttons">
       <a href="#Long" onClick={() => onChoice("LD")}>
-        <img src="https://assets.syncros.com/pages/saddles/icon-man-road-endurance.png" alt="Endurance" height="200" />
+        <img src="https://assets.syncros.com/pages/saddles/icon-long-distance.png" alt="Endurance" height="200" />
         <label>
           { getTranslation(i18n, 'distance.long', lang, 'Endurance') }
         </label>
       </a>
       <a href="#Short" onClick={() => onChoice("SD")}>
-        <img src="https://assets.syncros.com/pages/saddles/icon-man-road-performance.png" alt="Performance" height="200" />
+        <img src="https://assets.syncros.com/pages/saddles/icon-short-distance.png" alt="Performance" height="200" />
         <label>
           { getTranslation(i18n, 'distance.short', lang, 'Performance') }
         </label>

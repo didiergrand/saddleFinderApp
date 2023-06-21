@@ -2,11 +2,19 @@ import React, { useState } from "react";
 import { getTranslation } from "../utils/i18n";
 
 const MainProductItem = ({ SaddlesData, productCode, lang, i18n }) => {
-  let [mainImage, setMainImage] = useState(SaddlesData[productCode].images?.[0]);
-
+  let [mainImage, setMainImage] = useState(SaddlesData[productCode]?.images?.[0] ?? '');
+  // Vérifier si mainImage est défini
+  if (!mainImage) {
+    // Si mainImage n'est pas défini, utiliser une image de remplacement
+    mainImage = 'chemin/vers/placeholder.jpg';
+  }
   const product = SaddlesData[productCode];
   if (!product) {
-    return <div>Product not found.</div>;
+    return (
+      <div className="sf_product_mainitem">
+          <div>Product not found. {productCode}</div>
+          </div>
+      );
   }
   
   const handleThumbnailClick = (image) => {
